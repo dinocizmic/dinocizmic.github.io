@@ -1,0 +1,57 @@
+@charset "utf-8";
+body {
+	background-color: #ffffcc;
+}
+#instructions h1 {
+	font-family: Arial;
+	color: white;
+	background-color: #b3b3b3;
+	border-radius: 10px;
+	text-align: center;
+	top: 50%;
+	margin: 15px auto;
+	font-size: 2.5em;
+	padding: 10px;
+}
+#emotions ul li {
+	display: inline-block;
+	font-family: Arial;
+	color: white;
+	border-radius: 10px;
+	font-size: 1.75em;
+	padding: 10px;
+	text-align: center;
+	margin: 10px 30px;
+	width: 200px;
+}
+#emotions ul {
+	margin: 15px;
+	padding: 0;
+	text-align: center;
+}
+#bob {
+	background-color: #b3b3b3;
+	height: 150px;
+	width: 150px;
+	border-radius: 20px;
+	position: fixed;
+    top: 50%;
+    left: 50%;
+	margin-top: -75px;
+	margin-left: -75px;
+}
+#happy {
+	background-color: #e6e600;
+	transition: 0.5s ease;
+}
+#afraid {
+	background-color: #70db70;
+	transition: 0.5s ease;
+}
+#sad {
+	background-color: #0080ff;
+	transition: 0.5s ease;
+}
+#emotions li:hover {
+	transform: scale(1.1);
+}

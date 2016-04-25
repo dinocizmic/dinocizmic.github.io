@@ -1,0 +1,148 @@
+
+header>p {
+	animation:sayClick 5s ease-in;
+}
+
+ 
+@keyframes sayClick{
+	  0%{transform: translateX(250px);opacity:0;}
+	 30%{transform: translateX(0);opacity:1;}
+	 50%{opacity:.3;color:#a01515;}
+	 70%{opacity:1;color:#a01515;}
+	 90%{opacity:.2;color:#a01515;}
+	100%{opacity:1;}
+}
+
+.scene_1 #bunny{
+	animation:enterBunny 7s ease-in;
+	animation-fill-mode: forwards;
+	transform: translate(-65px,-320px); 
+}
+body.scene_1 {
+	animation: zoomIn 7s ease-in;
+	transform: scale(2);
+	transform-origin: 70% 70%;
+}
+.scene_1 #question{
+	animation: ask 8s ease-in;
+}
+
+.scene_1 #reply{
+	animation: respond 7s ease-in;
+	transform: translateX(-125px);
+	opacity: 1;
+}
+
+@keyframes enterBunny{
+	 0%{transform: translate(0);}
+	10%{transform: translate(-50px,-200px);}
+	25%{transform: translate(-50px,-200px);}
+	30%{transform: translate(-35px, -330px);}
+	35%{transform: translate(-65px, -320px);}
+}
+@keyframes zoomIn{
+	0% {transform: scale(1);}
+	25% {transform: scale(1);}
+	50% {transform: scale(2);}
+}
+@keyframes ask{
+	0%{opacity: 0;}
+	40%{opacity: 0.0;}
+	90%{opacity: 0.9;}
+}
+@keyframes respond{
+	0%{opacity: 0; transform: translateX(0px);}
+	80%{opacity: 0.0; transform: translateX(0px);}
+	100%{opacity: 1; transform: translateX(-125px);}
+}
+
+.scene_2 #reply, .scene_2_no #reply{
+	animation: responded 2s ease;
+	animation-fill-mode: forwards;
+}
+
+body.scene_2 {
+	animation: zoomOut ease-in 1.5s 2s forwards;
+}
+
+.scene_2 #heart {
+	animation: heartJoy 4s 1s forwards;
+}
+.scene_2 header {
+	position: absolute;
+	right: 0;
+	z-index: 1;
+}
+
+
+.scene_2 #bunny {
+	animation: together ease 5s 1s forwards;
+}
+
+
+.scene_2 #sunshine {
+	animation: sunshine 2s 4s cubic-bezier(.23,.01,.37,1.56) forwards;
+}
+
+@keyframes responded{
+	0% {opacity: 1; transform: translateX(-125px);}
+	33% {opacity: .66; transform: translate(-100px, 25px);}
+	66% {opacity: .33; transform: translate(-135px, 25px);}
+	100% {opacity: 0; transform: translate(-135px, 25px);}
+}
+@keyframes zoomOut{
+	100% {transform: scale(1);}
+}
+@keyframes together{
+	0%  {transform: translate(-65px, -320px);}
+	25% {transform: translate(-100px, -400px);}
+	35% {transform: translate(-100px, -400px);}
+	40% {transform: translate(-200px, -440px);}
+	80% {transform: translate(-200px, -400px);}
+	100% {transform: translate(-220px, -400px);}
+}
+@keyframes heartJoy{
+	0%  {opacity: 0;}
+	20% {opacity: 1; transform: scale(1) translate(40px, -5px);}
+	30% {opacity: 1; transform: scale(1.5) translate(40px, -5px);}
+	40% {opacity: 1; transform: scale(1) translate(40px, -5px);}
+	50% {opacity: 1; transform: scale(6) translate3d(35px, -65px, -1px);}
+	80% {opacity: 1; transform: scale(6) translate3d(35px, -65px, -1px);}
+	100% {opacity: 0; transform: scale(7) translate3d(30px, -55px, -1px);}
+}
+@keyframes sunshine{
+	100% {transform: translateX(-700px);}
+}
+
+
+body.scene_2_no {
+	animation: zoomOut ease-in 1.5s 1.5s forwards;
+}
+
+.scene_2_no #cloud {
+	animation: sunshine 2s 4s cubic-bezier(.25,.01,.39,1.6) forwards;
+}
+
+.scene_2_no #lovebunny {
+	animation: sad reverse 2s forwards;
+}
+.scene_2_no #sadbunny {
+	z-index: 1;
+	animation: sad 2s forwards;
+}
+
+.scene_2_no #bunny {
+	animation: away 5s 2s forwards;
+}
+
+@keyframes sad{
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+@keyframes away{
+	0%  {transform: translate(-65px, -320px);}
+	30% {transform: translate(-185px, -280px);}
+	60% {transform: translate(-200px, -250px);}
+	100%{transform: translate(-350px, -100px);}
+}

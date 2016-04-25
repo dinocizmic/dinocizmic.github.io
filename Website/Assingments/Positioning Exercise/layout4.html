@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<meta charset="UTF-8"/>
+<title>Layout #4</title>
+<link href="blockcolors.css" rel="stylesheet"/>
+<style>
+
+body {
+	width: 900px;
+	margin: 0 auto;
+}
+
+sidebar {
+	position: fixed;
+	margin-top: -82px;
+	margin-left: 0px;
+	width: 180px;
+	height: 800px;
+}
+
+nav {
+	width: 120px;
+	margin: 0 auto;
+	height: 200px;
+}
+header {
+	display: inline-block;
+	width: 714px;
+	height: 80px;
+	margin-left: 184px;
+	margin-top: 10px;
+}
+section:first-of-type {
+	margin-left: 184px;
+}
+
+section:nth-child(4) {
+	margin-left: 184px;
+}
+
+section:not(:first-of-type) {
+	display: inline-block;	
+	width: 234px;
+}
+
+section {
+	height: 400px;
+	margin-top: 10px;
+}
+
+</style>
+</head>
+<body>
+	<header>Header</header>
+	<sidebar>Sidebar
+		<nav>Nav</nav>
+	</sidebar>
+	<section>Section 
+    <p>		<img src="layout4.gif"></p></section>
+	<section>Section A</section>
+	<section>Section B</section>
+	<section>Section C</section>
+
+</body>
+</html>

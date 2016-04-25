@@ -1,0 +1,36 @@
+@charset "utf-8";
+.happy #bob {
+	animation: happyBob 3s linear forwards;
+}
+.afraid #bob {
+	animation: afraidBob 3s linear;
+}
+.sad #bob {
+	animation: sadBob 3s linear;
+}
+
+/* Emotion Keyframes */
+@-webkit-keyframes happyBob {
+	20% {transform: scale(2);}
+	25% {transform: rotate(720deg);}
+}
+@-webkit-keyframes afraidBob {
+	20% {transform: scale(0.5);}
+	25% {transform: scale(0.5); transform: translateX(-2.5px);}
+	35% {transform: scale(0.5); transform: translateX(5px);}
+	40% {transform: scale(0.5); transform: translateX(-2.5px);}
+	45% {transform: scale(0.5); transform: translateX(5px);}
+	50% {transform: scale(0.5); transform: translateX(-2.5px);}
+	55% {transform: scale(0.5); transform: translateX(5px);}
+	60% {transform: scale(0.5); transform: translateX(-2.5px);}
+	65% {transform: scale(0.5); transform: translateX(5px);}
+	70% {transform: scale(0.5); transform: translateX(-2.5px);}
+	75% {transform: scale(0.5); transform: translateX(5px);}
+	80% {transform: scale(0.5); transform: translateX(-2.5px);}
+	85% {transform: scale(0.5); transform: translateX(5px);}
+	90% {transform: scale(0.5); transform: translateX(-2.5px);}
+	95% {transform: scale(0.5); transform: translateX(5px);}
+}
+@-webkit-keyframes sadBob {
+	85% {transform: scale(2,0.25);}
+}

@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Bob's Moods</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#happy").click(function(){
+			$("body").addClass("happy");
+		});
+		$("#afraid").click(function(){
+			$("body").addClass("afraid");
+		});
+		$("#sad").click(function(){
+			$("body").addClass("sad");
+		});
+	});
+</script>
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<link href="css/animatebob.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="instructions">
+    	<h1>Pick one of the options to give an emotion to Bob the Blob</h1>
+    </div>
+    <div id="emotions">
+        <ul>
+        	<li id="happy">Happy</li>
+            <li id="afraid">Afraid</li>
+            <li id="sad">Sad</li>
+        </ul>
+    </div>
+    <div id="bob">
+    </div>
+</body>
+</html>
