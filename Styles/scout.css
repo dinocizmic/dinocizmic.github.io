@@ -1,0 +1,22 @@
+/* line 8, ../scss/scout.scss */
+.stick {
+  height: 50px;
+  width: 50px;
+}
+
+/* line 30, ../scss/scout.scss */
+.fadeOutUp {
+  animation: fadeOutUp 1s ease-out;
+  @at-root {
+    /* line 19, ../scss/scout.scss */
+    keyframes stick 0%  {
+      transform: translateY(0px);
+    }
+    /* line 22, ../scss/scout.scss */
+    keyframes stick 100%  {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+}
+
+}

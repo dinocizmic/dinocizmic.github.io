@@ -1,0 +1,33 @@
+body {
+$margin: 5px;
+}
+
+
+svg{
+}
+    .stick{
+        height: 50px;
+        width: 50px;
+    }
+ 
+    
+@mixin stick(){
+    animation: fadeOutUp 1s ease-out;
+    
+    @at-root {
+        keyframes stick {
+            0% {
+                transform: translateY(0px);
+            }
+            100% {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+        }
+    }
+}
+
+.fadeOutUp {
+    @include stick;
+}
+    
