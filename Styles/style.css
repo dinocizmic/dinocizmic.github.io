@@ -321,4 +321,9 @@ ul img {
 .clearfix { display: block; }
 /* close commented backslash hack */
 
+.owl-carousel .owl-item {
+  height: 250px;
+  
+}
+
 $sv
